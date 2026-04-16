@@ -5,4 +5,6 @@ router.get("/",controller.render_choose_fox_page);
 
 router.put("/stem",controller.vote_for_fox);
 
+router.get("/statistikk",controller.render_fox_statistics)
+
 module.exports = router
