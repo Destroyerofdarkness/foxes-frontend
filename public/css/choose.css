@@ -1,0 +1,41 @@
+main{
+    margin-top: 4vw;
+    display: flex;
+    align-content: center;
+    gap: 4vw;
+    justify-content: center;
+}
+main section{
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+main section img{
+    height: auto;
+    width: 18vw;
+}
+main section h2{
+    font-size: 1.7vw;
+    font-family: var(--font);
+    text-align: center;
+    color: var(--primary);
+}
+main section button{
+    font-size: 1.3vw;
+    background: var(--primary);
+    color: var(--secondary);
+    font-family: var(--font);
+    align-content: center;
+    align-self: center;
+    width: 8vw;
+    border: 0;
+    cursor: pointer;
+    border-radius: 0.4vw;
+}
+:root{
+    --primary:#ff6f00;
+    --secondary:rgb(0, 40, 99);
+    --font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

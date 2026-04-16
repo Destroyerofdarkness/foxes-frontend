@@ -1,0 +1,17 @@
+<%- include("./partials/head.ejs") %>
+<link rel="stylesheet" href="/css/choose.css">
+<%- include("./partials/header.ejs") %>
+    
+<main>
+    <% foxes.forEach(fox => {%>
+        <section>
+            <img src="<%= fox.img %>" alt="Bilde av en søt rev med masse andre rever eller en rev som er alene">
+            <h2><%= fox.name %></h2>
+            <button data-id="<%=fox._id  %>">Stem</button>
+        </section>
+  <%  }); %>
+</main>
+
+
+</body>
+</html>
