@@ -1,9 +1,10 @@
 const get_req = require("../handlers/getContentHandler");
 const put_req = require("../handlers/updateContentHandler");
 
+
 const render_choose_fox_page = async(req,res)=>{
     try {
-        const {foxes} = await get_req("/fox/all")
+        const {foxes} = await get_req("/fox/all") //Her blir de 2 tilfeldige revene hentet ved en utility template
         console.log(foxes)
         res.render("choose", {foxes})
     } catch (err) {
@@ -12,6 +13,8 @@ const render_choose_fox_page = async(req,res)=>{
     }
 }
 
+//Denne kontrolleren er for stemming for reven.
+//Det blir sendt en update request til Backenden som oppdaterer reven i databasen.
 const vote_for_fox = async(req,res)=>{
     try {
     const {success}= await put_req("/fox/put",req.body)

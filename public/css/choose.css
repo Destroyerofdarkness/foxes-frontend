@@ -39,3 +39,15 @@ main section button{
     --secondary:rgb(0, 40, 99);
     --font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+@media (max-width: 720px){
+    main section img{
+        width: 37vw;
+    }
+    main section h2{
+        font-size: 8vw;
+    }
+    main section button{
+        font-size: 6vw;
+        width: max-content;
+    }
+}

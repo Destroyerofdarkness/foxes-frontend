@@ -42,3 +42,17 @@ main section p {
     --secondary:rgb(0, 40, 99);
     --font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+@media (max-width:720px){
+    main h2{
+        font-size: 7vw;
+    }
+    main section img{
+        width: 30vw;
+    }
+    main section h3{
+        font-size: 5vw;
+    }
+    main section p{
+        font-size: 4vw;
+    }
+}

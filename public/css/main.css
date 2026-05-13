@@ -50,3 +50,17 @@ nav a{
     --secondary:rgb(0, 40, 99);
     --font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+@media (max-width: 720px){
+    header{
+        padding: 2vw;
+    }
+    h1{
+        font-size: 8vw;
+    }
+    nav{
+        margin-left: 4vw;
+    }
+    nav a{
+        font-size: 4vw;
+    }
+}
