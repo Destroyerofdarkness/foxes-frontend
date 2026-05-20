@@ -39,4 +39,13 @@ const render_fox_statistics = async(req,res)=>{
     }
 }
 
-module.exports = {render_choose_fox_page, vote_for_fox, render_fox_statistics}
+const render_fox_guide = async(req,res)=>{
+    try {
+        res.render("guide")
+    } catch (err) {
+        console.log(err);
+        res.status(500).send("Internal Server Error")
+    }
+}
+
+module.exports = {render_choose_fox_page, vote_for_fox, render_fox_statistics, render_fox_guide}
